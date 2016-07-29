@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet" type="text/css" />
+    <style>
+        body, button
+        {
+            background: #506d7b;
+            font: 22pt 'Fjalla One';
+            color: #fefefe;
+        }
+
+        img
+        {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            width: 200px;
+        }
+
+        button
+        {
+            display: block;
+            width: 260px;
+            margin: 10px auto;
+            padding-bottom: 10px;
+            background: #506d7b;
+            border: none;
+            border-bottom: 2px solid #52cda6;
+            cursor: pointer;
+        }
+
+        div#demo
+        {
+            width: 260px;
+            margin: 0 auto;
+            text-align: center;
+            letter-spacing: 3px;
+            margin-top: 20px;
+        }
+    </style>
+    <script src="lib/XRiG.v1.0.js"></script>
+    <script>
+
+        function rigLoaded(rig)
+        {
+            updateValue(rig.val());
+        }
+
+        function updateValue(values)
+        {
+            document.getElementById('demo').innerHTML = values.join(' ');
+        }
+
+        var xrig = new XRiG
+        ({
+            size:
+            {
+                rig: 4,
+                canvas: 300
+            },
+            style:
+            {
+                alpha: 0.9,
+                space: 12
+            },
+            palette:
+            [
+                [254, 254, 254],
+                [89, 240, 185],
+                [66, 243, 255],
+                [96, 131, 255],
+                [188, 89, 240],
+                [31, 64, 81],
+                [255, 66, 169],
+                [255, 220, 66],
+                [255, 84, 24]
+            ],
+            tolerance: 200,
+            on:
+            {
+                load: rigLoaded,
+                change: updateValue
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <img src="img/XRiG.logo.png" alt="x-rig logo" />
+    <button onclick="xrig.reset()">Reset</button>
+    <x-rig>
+        <canvas></canvas>
+    </x-rig>
+    <div id="demo"></div>
+</body>
+</html>
