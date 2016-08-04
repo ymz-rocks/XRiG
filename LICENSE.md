@@ -1,6 +1,6 @@
 ![project-poster][poster]
 
-[poster]:https://raw.githubusercontent.com/ymz-rocks/XRiG/master/img/XRiG.logo.preview.png "XRiG project"
+[poster]:https://raw.githubusercontent.com/ymz-rocks/emblems/master/XRiG/logo.png "XRiG project"
 
 __XRiG__ project and related files are licensed under a __Creative Commons Attribution 4.0 International License__
 
