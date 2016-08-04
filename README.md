@@ -1,6 +1,6 @@
 ![project-poster][poster]
 
-[poster]:https://raw.githubusercontent.com/ymz-rocks/XRiG/master/img/XRiG.logo.preview.png "XRiG project"
+[poster]:https://raw.githubusercontent.com/ymz-rocks/emblems/raw/master/XRiG/logo.png "XRiG project"
 
 # XRiG
 
